@@ -15,7 +15,7 @@ app.use(express.json());
 // to allow cross origin request
 app.use(
   cors({
-    origin: "http://localhost:5173", // Replace with your frontend's URL
+    origin: ["http://localhost:5173", "https://e-commerce-website-project-1.netlify.app"], // Replace with your frontend's URL
     credentials: true, // Allow credentials
     methods: ["GET", "POST", "OPTIONS"],
     allowedHeaders: ["Content-Type", "Authorization"],
